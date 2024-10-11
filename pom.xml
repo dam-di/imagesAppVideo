@@ -48,4 +48,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/images</directory>
+      </resource>
+    </resources>
+  </build>
+
+
 </project>

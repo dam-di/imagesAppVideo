@@ -31,12 +31,17 @@ public class MainFrame extends JFrame implements InterfaceView {
         addPanels();
     }
 
+    public FormPanel getFormPanel(){
+        return formPanel;
+    }
+
     private void addPanels(){
         // Obtener el navegador (CardLayout)
         navegador = (CardLayout) contenedorPaneles.getLayout();
 
         // Instanciar paneles
         initPanel = new InitPanel();
+        initPanel.setBackgroundImage("/gato.jpg");
         formPanel = new FormPanel();
 
         // Añadir el primer panel (inicio)
