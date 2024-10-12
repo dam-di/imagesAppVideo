@@ -27,6 +27,8 @@
         <rowspec value="top:32dlu:noGrow"/>
         <rowspec value="center:48px:noGrow"/>
         <rowspec value="center:47px:noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
         <colspec value="fill:max(d;4px):noGrow"/>
         <colspec value="left:4dlu:noGrow"/>
         <colspec value="fill:444px:grow"/>
@@ -48,6 +50,15 @@
             <border type="none"/>
             <children/>
           </grid>
+          <component id="bf569" class="javax.swing.JButton" binding="bt_save">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text value="GUARDAR"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

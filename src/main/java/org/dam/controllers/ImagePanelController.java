@@ -22,6 +22,7 @@ public class ImagePanelController implements ActionListener {
         try{
             String rutaImagen = URLDecoder.decode(getClass().getResource("/default.jpg").getPath(), "UTF-8");
             imagePanel.setBackgroundImage(rutaImagen);
+            imagePanel.setImagePath("src/images/default.jpg");
         }catch (UnsupportedEncodingException e){
             System.out.println("No se encontró el recurso indicado");
         }
@@ -31,6 +32,7 @@ public class ImagePanelController implements ActionListener {
         String imagePath = FileUtils.seleccionarRutaImagen();
         if(imagePath != null){
             imagePanel.setBackgroundImage(imagePath);
+            imagePanel.setImagePath(imagePath);
         }
 
     }

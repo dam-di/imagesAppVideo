@@ -13,9 +13,19 @@ public class ImagePanel extends JPanel {
     private JButton bt_default;
     private JLabel lb_image;
 
+    private String imagePath;
     public ImagePanel(){
         add(mainPanel);
         setCommands();
+        setImagePath("src/images/default.jpg");
+    }
+
+    public String getImagePath(){
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath){
+        this.imagePath = imagePath;
     }
 
     public void setBackgroundImage(String rutaImagen){

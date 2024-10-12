@@ -2,6 +2,7 @@ package org.dam;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatIntelliJLaf;
+import org.dam.controllers.FormPanelController;
 import org.dam.controllers.ImagePanelController;
 import org.dam.controllers.MainFrameController;
 import org.dam.models.ProductModel;
@@ -34,10 +35,12 @@ public class App
         // Controladores
         MainFrameController mainFrameController = new MainFrameController(mainFrame);
         ImagePanelController imagePanelController = new ImagePanelController(mainFrame.getFormPanel().getImagePanel());
+        FormPanelController formPanelController = new FormPanelController(mainFrame.getFormPanel());
 
         // Listeners
         mainFrame.addListener(mainFrameController);
         mainFrame.getFormPanel().getImagePanel().addListeners(imagePanelController);
+        mainFrame.getFormPanel().addListeners(formPanelController);
 
         mainFrame.showWindow();
     }
